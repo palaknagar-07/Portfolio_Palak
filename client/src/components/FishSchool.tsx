@@ -155,7 +155,8 @@ export default function FishSchool({
       className="absolute inset-0 pointer-events-auto"
       style={{ 
         zIndex: 10,
-        opacity: 0.8
+        opacity: 0.8,
+        pointerEvents: 'auto'
       }}
     />
   );

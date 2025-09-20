@@ -79,7 +79,7 @@ export default function SchoolingFish({ containerRef }: SchoolingFishProps) {
   }
 
   return (
-    <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 5 }}>
+    <div className="absolute inset-0" style={{ zIndex: 5 }}>
       {schoolConfigs.map((config) => (
         <FishSchool
           key={config.id}
@@ -94,7 +94,7 @@ export default function SchoolingFish({ containerRef }: SchoolingFishProps) {
       
       {/* Performance indicator - only show in dev */}
       {process.env.NODE_ENV === 'development' && (
-        <div className="absolute top-4 right-4 bg-black/50 text-white text-xs p-2 rounded pointer-events-auto">
+        <div className="absolute top-4 right-4 bg-black/50 text-white text-xs p-2 rounded pointer-events-auto z-20">
           Schools: {schoolConfigs.length} | 
           Fish: {schoolConfigs.reduce((sum, config) => sum + config.fishCount, 0)} |
           {dimensions.width}x{dimensions.height}

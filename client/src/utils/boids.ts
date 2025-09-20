@@ -99,18 +99,11 @@ export class Fish {
 
   // Apply boids rules: separation, alignment, cohesion
   flock(fishes: Fish[], mousePos: Vector2D | null, bounds: { width: number; height: number }): void {
-    const separation = this.separate(fishes);
-    const alignment = this.align(fishes);
-    const cohesion = this.seek(this.cohesion(fishes));
-    const avoidMouse = mousePos ? this.avoid(mousePos) : new Vector2D(0, 0);
-    const boundaries = this.boundaries(bounds);
-
-    // Weight the forces
-    separation.multiply(2.0);
-    alignment.multiply(1.0);
-    cohesion.multiply(1.0);
-    avoidMouse.multiply(3.0);
-    boundaries.multiply(2.0);
+    const separation = this.separate(fishes).multiply(2.0);
+    const alignment = this.align(fishes).multiply(1.0);
+    const cohesion = this.seek(this.cohesion(fishes)).multiply(1.0);
+    const avoidMouse = mousePos ? this.avoid(mousePos).multiply(3.0) : new Vector2D(0, 0);
+    const boundaries = this.boundaries(bounds).multiply(2.0);
 
     this.acceleration = this.acceleration
       .add(separation)
