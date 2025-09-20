@@ -326,4 +326,77 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* Bubble animations for BubbleField component */
+  .bubble {
+    position: absolute;
+    bottom: -10%;
+    left: var(--left);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: radial-gradient(
+      closest-side,
+      hsla(200, 100%, 95%, var(--opacity)) 0%,
+      hsla(200, 100%, 95%, calc(var(--opacity) * 0.3)) 60%,
+      transparent 100%
+    );
+    border: 1px solid hsla(0, 0%, 100%, 0.25);
+    filter: blur(var(--blur, 0px));
+    animation: 
+      bubble-rise var(--duration) ease-out var(--delay) infinite,
+      bubble-drift calc(var(--duration) * 0.7) ease-in-out var(--delay) infinite alternate;
+  }
+  
+  .bubble-feature {
+    animation: 
+      bubble-rise var(--duration) ease-out var(--delay) infinite,
+      bubble-drift calc(var(--duration) * 0.7) ease-in-out var(--delay) infinite alternate,
+      bubble-wobble calc(var(--duration) * 0.3) ease-in-out var(--delay) infinite alternate;
+  }
+
+  @keyframes bubble-rise {
+    0% {
+      transform: translateY(0) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: var(--opacity);
+    }
+    90% {
+      opacity: var(--opacity);
+    }
+    100% {
+      transform: translateY(-110vh) translateX(var(--drift));
+      opacity: 0;
+    }
+  }
+
+  @keyframes bubble-drift {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(var(--drift)); }
+  }
+
+  @keyframes bubble-wobble {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(0.98); }
+  }
+
+  /* Reduced motion support for bubbles */
+  @media (prefers-reduced-motion: reduce) {
+    .bubble-field {
+      display: none;
+    }
+  }
+
+  /* Mobile optimization for bubbles */
+  @media (max-width: 640px) {
+    .bubble-micro {
+      display: none;
+    }
+    .bubble-feature:nth-child(2n) {
+      display: none;
+    }
+  }
 }
