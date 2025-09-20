@@ -1,0 +1,272 @@
+🌊 YOUR Ocean Portfolio Website - Complete Personalized AI Development Prompt
+You are an expert React/Next.js developer. Generate a complete, production-ready Next.js 14 project for MY personal portfolio website with an underwater ocean theme. This is MY portfolio - customize all content, projects, and personal details specifically for me based on the information I provide.
+
+🎯 MANDATORY Technical Stack
+
+Framework: Next.js 14 with App Router (not Pages Router)
+Styling: Tailwind CSS v3.4+ with custom ocean gradients
+3D Engine: @react-three/fiber v8.15+ + @react-three/drei v9.88+
+Animations: Framer Motion v10.16+ for all UI transitions
+TypeScript: Strict mode enabled throughout entire project
+Bundler: Built-in Next.js bundler with optimizations enabled
+
+🏷️ MY PERSONAL INFORMATION (Use This Exact Content)
+My Name & Branding
+
+Full Name: [INSERT YOUR NAME HERE]
+Professional Title: [INSERT YOUR ROLE - e.g., "Full Stack Developer", "Frontend Engineer", "Software Developer"]
+Tagline: "Diving Deep into Code" or "Exploring the Digital Ocean"
+Personal Brand: Present me as a digital ocean explorer discovering new depths of technology
+
+MY Contact Information
+
+Email: [INSERT YOUR EMAIL]
+LinkedIn: [INSERT YOUR LINKEDIN URL]
+GitHub: [INSERT YOUR GITHUB USERNAME]
+Portfolio URL: [INSERT YOUR DOMAIN OR PLANNED URL]
+Location: [INSERT YOUR CITY, COUNTRY]
+Phone: [INSERT IF YOU WANT TO INCLUDE]
+
+MY Skills & Technologies (Display These on Jellyfish)
+Frontend Skills (Blue Glowing Jellyfish):
+
+[LIST YOUR FRONTEND SKILLS - e.g., React, Next.js, TypeScript, Tailwind CSS]
+
+Backend Skills (Green Glowing Jellyfish):
+
+[LIST YOUR BACKEND SKILLS - e.g., Node.js, Python, Express, FastAPI]
+
+Database & Cloud (Cyan Glowing Jellyfish):
+
+[LIST YOUR DATABASE/CLOUD SKILLS - e.g., PostgreSQL, MongoDB, AWS, Docker]
+
+Tools & Others (Orange Glowing Jellyfish):
+
+[LIST YOUR TOOLS - e.g., Git, Figma, VS Code, Linux]
+
+Specializations (Purple Glowing Jellyfish):
+
+[LIST YOUR SPECIAL SKILLS - e.g., 3D Graphics, AI/ML, Mobile Development]
+
+MY Projects (Display These in Coral Formations)
+Project 1 (Main Coral Formation):
+
+Title: [YOUR MOST IMPRESSIVE PROJECT NAME]
+Description: [YOUR PROJECT DESCRIPTION]
+Tech Stack: [TECHNOLOGIES YOU USED]
+Live URL: [YOUR DEPLOYED PROJECT URL]
+GitHub URL: [YOUR GITHUB REPO URL]
+Features: [KEY FEATURES YOU BUILT]
+
+Project 2 (Secondary Coral):
+
+Title: [YOUR SECOND BEST PROJECT]
+Description: [PROJECT DESCRIPTION]
+Tech Stack: [TECHNOLOGIES USED]
+Live URL: [PROJECT URL]
+GitHub URL: [REPO URL]
+
+Project 3 (Third Coral):
+
+Title: [YOUR THIRD PROJECT]
+Description: [DESCRIPTION]
+Tech Stack: [TECHNOLOGIES]
+URLs: [LINKS]
+
+Project 4 (Fourth Coral):
+
+Title: [YOUR FOURTH PROJECT OR SIDE PROJECT]
+Description: [DESCRIPTION]
+Tech Stack: [TECHNOLOGIES]
+URLs: [LINKS]
+
+MY Professional Experience (Show in Deep Sea Research Station)
+
+Current Role: [YOUR CURRENT JOB TITLE] at [COMPANY NAME]
+Previous Role: [IF APPLICABLE]
+Years of Experience: [YOUR EXPERIENCE LEVEL]
+Key Achievements: [YOUR MAJOR ACCOMPLISHMENTS]
+
+MY Education & Certifications (Display in Underwater Cave)
+
+Degree: [YOUR DEGREE] from [UNIVERSITY/SCHOOL]
+Certifications: [ANY RELEVANT CERTIFICATIONS]
+Learning Journey: [ANY BOOTCAMPS, COURSES, SELF-TAUGHT STORY]
+
+
+📁 PROJECT Structure (Customize with My Details)
+my-ocean-portfolio/
+├── package.json (with MY name and details)
+├── next.config.js
+├── tailwind.config.js
+├── public/
+│   ├── models/ (3D models for MY portfolio)
+│   ├── images/
+│   │   ├── my-avatar.jpg (MY profile picture)
+│   │   └── project-screenshots/ (MY project images)
+│   └── resume/
+│       └── [MY-NAME]-resume.pdf
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx (with MY name in metadata)
+│   │   ├── page.tsx (MY portfolio home)
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── scenes/
+│   │   │   ├── MyOceanSurface.tsx (MY hero section)
+│   │   │   ├── MyProjectReef.tsx (MY projects)
+│   │   │   └── MyDeepSeaAbout.tsx (MY about section)
+│   │   ├── ui/
+│   │   │   ├── MyProjectCard.tsx (MY project data)
+│   │   │   ├── MySkillsJellyfish.tsx (MY skills)
+│   │   │   └── MyContactForm.tsx (sends to MY email)
+│   └── data/
+│       ├── myProjects.ts (MY project data)
+│       ├── mySkills.ts (MY skills data)
+│       └── myInfo.ts (MY personal info)
+🌊 MY Three Portfolio Scenes
+Scene 1: MY Ocean Surface (Hero)
+Content Specific to Me:
+
+Large animated text: "[MY NAME]"
+Subtitle: "[MY PROFESSIONAL TITLE]"
+Tagline: "Diving Deep into Code" or custom message about ME
+CTA Button: "Explore My Digital Ocean"
+Floating particles with MY initials or logo
+Welcome message: "Welcome to [MY NAME]'s underwater coding world"
+
+Scene 2: MY Project Reef
+Display MY Actual Projects:
+
+Coral 1: Show [MY PROJECT 1] with actual screenshots
+Coral 2: Show [MY PROJECT 2] with real tech stack badges
+Coral 3: Show [MY PROJECT 3] with live demo links
+Coral 4: Show [MY PROJECT 4] or "More Projects Coming Soon"
+Interactive elements link to MY actual GitHub repos
+Treasure chests contain MY live project demos
+
+Scene 3: MY Deep Sea About
+Personal Information About Me:
+
+3D avatar representing ME (or placeholder for MY photo)
+Jellyfish showing MY actual skills and proficiency levels
+Contact cave with form that emails ME directly
+Research station with MY actual resume download
+Whales carrying MY real social media profiles
+Personal story: Brief bio about MY coding journey
+
+
+💾 MY Data Files (Create with Real Content)
+/src/data/myInfo.ts
+typescriptexport const myPersonalInfo = {
+  name: "[MY FULL NAME]",
+  title: "[MY JOB TITLE]",
+  email: "[MY EMAIL]",
+  location: "[MY LOCATION]",
+  bio: "[MY PERSONAL BIO - 2-3 sentences about MY background]",
+  resumeUrl: "/resume/[MY-NAME]-resume.pdf",
+  social: {
+    github: "[MY GITHUB URL]",
+    linkedin: "[MY LINKEDIN URL]",
+    twitter: "[MY TWITTER IF APPLICABLE]",
+    website: "[MY WEBSITE IF APPLICABLE]"
+  }
+};
+/src/data/myProjects.ts
+typescriptexport const myProjects = [
+  {
+    id: 1,
+    title: "[MY PROJECT 1 NAME]",
+    description: "[REAL DESCRIPTION OF WHAT I BUILT]",
+    longDescription: "[DETAILED EXPLANATION OF MY PROJECT]",
+    techStack: ["[ACTUAL TECH I USED]", "[REAL FRAMEWORKS]"],
+    features: ["[REAL FEATURES I IMPLEMENTED]"],
+    liveUrl: "[MY ACTUAL DEMO URL]",
+    githubUrl: "[MY ACTUAL REPO URL]",
+    imageUrl: "/images/projects/[MY-PROJECT-1].jpg",
+    coralType: "brain" as const,
+    depth: "shallow" as const
+  },
+  // ... repeat for MY other projects
+];
+/src/data/mySkills.ts
+typescriptexport const mySkills = [
+  {
+    category: "Frontend",
+    color: "#00E5FF",
+    skills: [
+      { name: "[MY ACTUAL FRONTEND SKILL]", level: [MY PROFICIENCY 1-100] },
+      // ... MY other frontend skills
+    ]
+  },
+  {
+    category: "Backend", 
+    color: "#00B2A0",
+    skills: [
+      { name: "[MY ACTUAL BACKEND SKILL]", level: [MY LEVEL] },
+      // ... MY other backend skills
+    ]
+  },
+  // ... continue with MY actual skills
+];
+🎨 Customization for MY Brand
+MY Color Palette (Ocean + Personal Touch)
+
+Primary: Deep ocean blues (keeping ocean theme)
+Accent: [ADD A PERSONAL COLOR THAT REPRESENTS ME]
+Highlight: Bioluminescent cyan for MY interactive elements
+Secondary: [MY PREFERRED ACCENT COLOR] for special highlights
+
+MY Typography & Voice
+
+Use professional but friendly tone throughout
+Include MY personality in micro-interactions
+Add subtle references to MY interests or background
+Use language that reflects MY communication style
+
+📧 MY Contact Integration
+Contact Form Setup
+typescript// Form should email directly to MY actual email
+const handleContactSubmit = async (formData: FormData) => {
+  // Send email to: [MY ACTUAL EMAIL]
+  // Subject: "Portfolio Contact from [Visitor Name]"
+  // Include: name, email, message, project type
+  // Auto-reply: Thank them and mention MY typical response time
+};
+MY Availability Status
+
+Show MY current availability for freelance/full-time work
+Include MY preferred project types
+Mention MY timezone and response expectations
+
+
+🚀 MY SEO & Metadata
+Page Titles & Descriptions
+
+Title: "[MY NAME] - [MY TITLE] | Ocean-Themed Portfolio"
+Description: "Dive into [MY NAME]'s underwater portfolio. Explore MY projects in [MY MAIN TECHNOLOGIES] and discover the depths of MY coding expertise."
+Keywords: "[MY NAME], [MY SKILLS], [MY LOCATION] developer, [MY SPECIALTIES]"
+
+Open Graph Tags
+
+og:title: "[MY NAME]'s Digital Ocean Portfolio"
+og:description: "Professional [MY TITLE] showcasing projects and skills"
+og:image: Screenshot of MY ocean portfolio homepage
+og:url: [MY ACTUAL DOMAIN]
+
+
+⚡ Performance for MY Portfolio
+MY Project Assets
+
+Optimize MY actual project screenshots (WebP format, < 200KB each)
+Compress MY resume PDF (< 1MB)
+Optimize MY profile photo for web (multiple sizes)
+
+MY Analytics Setup
+
+Google Analytics with MY tracking ID
+Track: page views, project clicks, contact form submissions
+Goal conversions: resume downloads, project demo clicks
+
+
+CRITICAL: This is MY personal portfolio. Every piece of content, every project detail, every contact method should be specifically about ME and MY actual work. Don't use placeholder content - use the real information I provide to create MY authentic underwater coding portfolio that represents MY skills, MY projects, and MY professional brand.
