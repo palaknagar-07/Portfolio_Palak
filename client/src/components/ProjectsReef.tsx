@@ -1,8 +1,10 @@
+import { useRef } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, Calendar, Zap } from 'lucide-react';
 import { projects } from '@/data/projects';
+import SchoolingFish from '@/components/SchoolingFish';
 import coralBg from '@assets/generated_images/Project_coral_formation_57b48730.png';
 
 interface ProjectCardProps {
@@ -134,8 +136,14 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 }
 
 export default function ProjectsReef() {
+  const reefRef = useRef<HTMLDivElement>(null);
+
   return (
-    <section className="py-24 px-8 bg-gradient-to-b from-slate-800 to-slate-900 relative" id="projects">
+    <section 
+      ref={reefRef}
+      className="py-24 px-8 bg-gradient-to-b from-slate-800 to-slate-900 relative" 
+      id="projects"
+    >
       {/* Background Effects */}
       <div className="absolute inset-0">
         {[...Array(10)].map((_, i) => (
@@ -151,6 +159,9 @@ export default function ProjectsReef() {
           />
         ))}
       </div>
+
+      {/* Schooling Fish */}
+      <SchoolingFish containerRef={reefRef} />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
