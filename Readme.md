@@ -1,4 +1,4 @@
-git # Ocean-Themed Portfolio Website
+# Ocean-Themed Portfolio Website
 
 ## Overview
 
