@@ -36,7 +36,7 @@ I'm an aspiring Machine Learning Engineer with a strong foundation in computer s
   - Experience timeline with ocean current flow
   - Contact form with bubble animations
 
-  # 🌊 Ocean-Themed Portfolio Website
+  # 🌊 My Portfolio Website
 
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
