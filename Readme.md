@@ -90,7 +90,7 @@ I'm an aspiring Machine Learning Engineer with a strong foundation in computer s
 
 - Node.js 18+ and npm 9+
 - PostgreSQL (for production)
-- Git
+- Git / Git Hub
 
 ### Installation
 
